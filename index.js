@@ -22,11 +22,11 @@ app.post('/addtask', function (req, res) {
 //remove task(s) from the "to do" and add them to the compeleted list/array
 app.post("/removetask", function(req, res) {
     var completeTask = req.body.check;
-    if (typeof completeTask === "string") { //marking a singular task as completed
+    if (typeof completeTask === "string") { //removing a singular task as completed
         completedArr.push(completeTask); //add to completed array
         taskArr.splice(taskArr.indexOf(completeTask), 1); //remove from task array 
     } 
-    else if (typeof completeTask === "object") { //marking multiple tasks as completed
+    else if (typeof completeTask === "object") { //removing multiple tasks as completed
         for (var i = 0; i < completeTask.length; i++) {     
             completedArr.push(completeTask[i]);
             taskArr.splice(taskArr.indexOf(completeTask[i]), 1); 
