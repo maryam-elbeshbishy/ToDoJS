@@ -1,0 +1,50 @@
+body {
+    background-image: url(Background.jpg);
+    background-size: cover;
+    border-color: white;
+}
+button{
+    background-color:rgba(186, 52, 139, 0.7);
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    color: white;
+    border-style: none;
+}
+.app {
+    border-radius: 4rem;
+    background: rgba(137, 171, 209, 0.8);
+    margin: 4rem 4rem 4rem 4rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    position: relative;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.2);
+    font-family: "Trebuchet MS", "Courier New", monospace;
+    text-align: center;
+    color: white;
+}
+h2{
+    font-family: "Trebuchet MS";
+    font-size: 3rem
+}
+h3 {
+    font-size: 2rem;
+}
+ul{
+    list-style:none;
+}
+li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+input{
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    background-color: rgb(109, 154, 205);
+    border-style: dashed;
+    border-color: white;
+}
+button{
+     font-size: 1.5rem;
+     margin: .3rem;
+     padding: .3rem;
+}

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title> Todo app  </title>
+    <link href="/styles.css" rel="stylesheet">
+  </head>
+<body>
+
+<div class="app">
+    <h2> To Do List </h2>
+
+    <form action ="/addtask" method="POST">
+        <h3> Add New Task</h3>
+        <input type="text" name="newtask">
+        <button> Add Task </button>
+        <h3> Added Tasks </h3>
+        <% for( var i = 0; i < taskArr.length; i++){ %>
+            <li><input type="checkbox" name="check" value="<%= taskArr[i] %>" /> <%= taskArr[i] %> </li>
+        <% } %>      
+        <button formaction="/removetask" type="submit"> Remove Task </button>
+    </form>
+    <h3> Completed Tasks </h3>
+    <% for(var i = 0; i < completedArr.length; i++){ %>
+        <li><input type="checkbox" checked><%= completedArr[i] %> </li>
+    <% } %>
+</div>
+</body>
+</html>
